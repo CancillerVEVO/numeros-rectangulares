@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/2.3.7/mini-dark.css" integrity="sha512-y4nI4f1j3V6p1r55Bje1sqzFiHSmRmXwU+mM3Sk88c2kL/uReSX/9h/G7Z45invzam34V1GPArq75AZpDkkMgQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/style.css">
+    <title>Numeros Rectangulares</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Congruencial Lineal</h1>
+
+    <div class="equation">
+      <p>Xn+1 = (<span id="equation-a">a</span>X0 + <span id="equation-c">c</span>) mod <span id="equation-m">m</span>; X0 = <span id="equation-x0"></span></p>
+    </div>
+
+    <form class="parameters" id="parameters">
+      <label for="parameter-a">a</label>
+      <input type="number" id="parameter-a" name="parameter-a" />
+      <label for="c">c</label>
+      <input type="number" id="parameter-c" name="parameter-c" />
+      <label for="parameter-m">m</label>
+      <input type="number" id="parameter-m" name="parameter-m" />
+      <label for="parameter-x0">x0</label>
+      <input type="number" id="parameter-x0" name="parameter-x0" />
+      <button type="submit" id="button-submit">Generar</button>
+    </form>
+
+
+    <div class="result" id="result">
+      <table>
+        <thead>
+          <tr>
+            <th>n</th>
+            <th>Xn</th>
+            <th>(aX0 + c) mod m</th>
+            <th># Rect</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="result-title" id="result-title">
+      
+    </h2>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
