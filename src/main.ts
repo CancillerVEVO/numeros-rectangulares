@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const x0 = parseFloat(x0Input.value);
 
       let xn = x0;
-      let xnPrevious = x0;
+
       let n = 1;
       let isRejected = false;
       const result = [];
@@ -70,7 +70,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         result.push((a * xn + c) % m);
 
-        xnPrevious = xn;
         xn = (a * xn + c) % m;
         n++;
 
