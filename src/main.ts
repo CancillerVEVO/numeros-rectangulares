@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
         newRow.insertCell().textContent = xn.toString();
         newRow.insertCell().textContent = `(${a}(${xn}) + ${c}) mod ${m} = ${Math.floor(
           (a * xn + c) / m
-        )} + ${numRect} / 100`;
+        )} + ${numRect} / ${m}`;
         newRow.insertCell().textContent =
           numRect.toString() + " / " + m.toString();
 
@@ -93,9 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
         lastRow.insertCell().textContent = xn.toString();
         lastRow.insertCell().textContent = `(${a}(${xn}) + ${c}) mod ${m} = ${Math.floor(
           (a * xn + c) / m
-        )} + ${(a * xn + c) % m} / 100`;
+        )} + ${(a * xn + c) % m} / ${m}`;
 
-        lastRow.insertCell().textContent = `${(a * xn + c) % m} / 100`;
+        lastRow.insertCell().textContent = `${(a * xn + c) % m} / ${m}`;
       }
     }
   });
